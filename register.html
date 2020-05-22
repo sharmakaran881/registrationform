@@ -1,0 +1,66 @@
+																				<!DOCTYPE html>
+<html> 
+<head>
+<title> REGISTRATION </title>
+<style type="text/css">
+body {background-color:lightgreen;}
+h1
+{
+background-color:#738/ac;
+color:red;
+}
+#table1 
+{
+    width: 300px;
+     border-collapse:collapse;
+    
+
+}
+#table1 , tr td 
+{ border: 1px solid black;
+   
+   
+}
+</style>
+<script>
+function formvalidation()
+{
+name =document.getElementById("fullname").value;
+if(name =="" || name == null)
+{ alert( " Enter your full name");
+    return false;
+    }
+}
+</script>
+</head>
+<body>
+<h1> STUDENT REGISTRATION FORM</h1>
+<form onsubmit = "return formvalidation()">
+<form method="get" action="karan.php" >
+<table id="table1">
+<tr>
+<td><label>Full Name:</label></td>
+<td><input type="text" name="FullName" id="fullname" placeholder="enter fullname"></td>
+</tr>
+ <tr>
+ <td><label>Login ID:</label></td>
+<td> <input type="text" name="LoginID" id="loginid" placeholder="enter loginid"></td>
+</tr>
+<tr>
+ <td>
+
+<label>Password:</label> </td><td><input type="text" name="Password" id="password" placeholder="enter password"></td>
+</tr>
+<tr>
+<td>
+
+</td>
+<td>
+<input type="submit" value=" submit " >
+<input type="button" value="Cancel">
+</td></tr>
+</table>
+</form>
+</form
+</body> 
+</html>
